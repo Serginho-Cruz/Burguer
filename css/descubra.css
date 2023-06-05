@@ -1,0 +1,24 @@
+.descubra {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.propaganda {
+    display: flex;
+    flex-direction: column;
+}
+
+.propaganda h2, .propaganda span {
+    color: rgb(65,31,9);
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.propaganda p {
+    text-align: justify;
+}
+
+.imagem img {
+    width: 100%;
+}

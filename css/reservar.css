@@ -1,0 +1,74 @@
+.reserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reserva h2, .reserva span, .reservar-input {
+    color: rgb(65,31,9);
+    text-transform: uppercase;
+}
+
+.reserva span {
+    font-size: 1rem;
+}
+
+.reserva h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.5rem;
+}
+
+.reservar {
+    margin: 1.5rem 0;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.reservar-input {
+    width: 45%;
+    background-color: orange;
+    padding: 5px 2px;
+    border: none;
+    border-radius: 5px;
+}
+
+.reservar-input::placeholder {
+    text-transform: uppercase;
+    padding-left: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.reservar-input[type=date], .reservar-input[type=time] {
+    padding-left: 0.8rem; 
+}
+
+.reservar-button {
+    width: 45%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(223,28,28);
+}
+
+@media (max-width: 768px) {
+    .reservar {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 575px) {
+    .reservar-input, .reservar-button {
+        width: 100%;
+    }
+
+    .reservar-button {
+        padding: 0.5rem 0;
+    }
+}

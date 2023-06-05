@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: rgb(255, 194, 52);
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-brand {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 60%;
+}
+
+
+.alinhamento {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 350px;
+}
+
+.textos {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    color: rgb(65, 31, 9);
+}
+
+.alinhamento-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.span,
+.h1 {
+    width: fit-content;
+    height: fit-content;
+    text-transform: uppercase;
+}
+
+.comborda {
+    padding: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    border: 2px dashed black;
+}
+
+.burger-text {
+    font-size: 3rem;
+}
+
+.week-text {
+    font-size: 1.5rem;
+}
+
+.alinhamento-texto span,
+.alinhamento-texto h1 {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.alinhamento-texto h1.maior {
+    font-size: 5rem;
+}
+
+.alinhamento-texto span.normal {
+    font-size: 3rem;
+}
+
+.oferta {
+    position: relative;
+}
+
+.oferta .preco {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    width: 20%;
+}
+
+.delivery {
+    padding: 1rem;
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery span {
+    font-size: 0.8rem;
+    color: rgb(65, 31, 9);
+    font-weight: bold;
+}
+
+.icon {
+    width: 1.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .alinhamento {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textos {
+        width: 100%;
+        align-items: center;
+    }
+
+    .alinhamento-texto {
+        align-items: center;
+    }
+
+    .comborda, .maior {
+        margin-top: 1rem;
+    }
+
+    .oferta {
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    .oferta .preco {
+        top: 75%;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .navbar .container-fluid {
+        justify-content: space-evenly;
+    }
+
+    .delivery span {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,76 @@
+.rodape {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    color: white;
+    height: 400px;
+    padding: 0 2rem 0 2rem;
+    background-image: url('../img/rodape/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rodape .logo {
+    margin-top: 3rem;
+}
+
+.rodape .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.rodape .texto-contato {
+    margin-top: 2rem;
+}
+
+.contato-localizacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato, .localizacao {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.rodape .row:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape span {
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+}
+
+.rodape ul {
+    width: max-content;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media (max-width: 575px) {
+    .rodape {
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodape .row:last-child {
+        gap: 1rem;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,76 @@
+.escolhas {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.escolhas-subtitulo {
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(65,31,9);
+    font-size: 3rem;
+}
+
+.escolhas-paragrafo {
+    max-width: 90%;
+    font-size: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hamburguers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.hamburguer {
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.burguer-name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(65,31,9);
+}
+
+.descricao {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.burger-button {
+    padding: 0.7rem 1rem;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(223,28,28);
+}
+
+.burger-button:hover {
+    background-color: rgba(223,28,28, 0.8);
+}
+
+@media (max-width: 575px) {
+    .hamburguers {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hamburguer {
+        width: 100%;
+        gap: 1rem;
+        height: auto;
+    }
+}
